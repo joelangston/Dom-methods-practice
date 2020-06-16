@@ -21,8 +21,32 @@ buttonElement.addEventListener("click", function() {
     mainElement.remove()
 })
 
+const input = document.createElement("input")
+input.id = "input"
+input.type = "text"
+input.placeholder = "CSS ID"
+bodyElement.append(input)
+const cssButton = document.createElement("button")
+cssButton.append("Remove CSS")
+bodyElement.append(cssButton)
+cssButton.addEventListener("click", function () {
+    const inputValue = document.getElementById("input").value
+    const removedElement = document.querySelector(inputValue)
+    removedElement.remove()
+})
 
-
-
-
+const textInput = document.createElement("input")
+textInput.id = "textInput"
+textInput.type = "text"
+textInput.placeholder = "text input"
+bodyElement.append(textInput)
+const createButton = document.createElement("button")
+createButton.append("Create")
+bodyElement.append(createButton)
+createButton.addEventListener("click", function() {
+    const textInputValue = document.getElementById("textInput").value
+    const addedElement = document.createElement("p")
+    bodyElement.append(addedElement)
+    addedElement.append(textInputValue)
+})
 
