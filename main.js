@@ -2,7 +2,7 @@ const bodyElement = document.querySelector("body")
 
 const buttonElement = document.createElement("button")
 bodyElement.append(buttonElement)
-buttonElement.append("button")
+buttonElement.append(" remove ")
 
 const mainElement = document.createElement("main")
 bodyElement.append(mainElement)
