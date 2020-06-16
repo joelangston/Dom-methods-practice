@@ -30,8 +30,8 @@ const cssButton = document.createElement("button")
 cssButton.append("Remove CSS")
 bodyElement.append(cssButton)
 cssButton.addEventListener("click", function () {
-    const inputValue = document.getElementById("input").value
-    const removedElement = document.querySelector(inputValue)
+    const textValue = document.getElementById("input").value
+    const removedElement = document.querySelector(textValue)
     removedElement.remove()
 })
 
